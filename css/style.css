@@ -24,23 +24,24 @@ body {
     background-color: #2D25A0;
     padding-top: 109px;
     padding-bottom: 86px;
-    
+
 }
-.header-section:hover .header-image img{
+
+.header-section:hover .header-image img {
     transform: rotate(30deg);
     transition: transform 1s ease-in-out 0.3s;
 }
 
 .container {
     width: 1160px;
-    margin: auto;
-
+    margin: 0 auto;
 }
 
 .header-part {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .header-content {
@@ -61,12 +62,17 @@ body {
     font-size: 16px;
     font-weight: 500;
 }
-.watch{
+
+.watch {
+    display: flex;
+    justify-content: center;
     margin-top: 27px;
 }
-.right-arrow{
+
+.right-arrow {
     margin-left: 8px;
 }
+
 .header-image img {
     width: 556.01px;
     height: 438px;
@@ -79,39 +85,46 @@ body {
 /* ----------------
   player-part start 
 ------------------*/
-.player-section{
+.player-section {
     margin-top: 70px;
 }
-.players{
+
+.players {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 45px;
     grid-row-gap: 45px;
 }
-.player{
-    padding: 15px ;
+
+.player {
+    padding: 15px;
     box-shadow: 2px 2px 10px gray;
-    
-    
+
+
 }
+
 .player-image img {
     width: 100%;
-    
+
 }
-.player-content{
+
+.player-content {
     margin-top: 16px;
 }
-.player-content h3{
+
+.player-content h3 {
     color: #18191F;
     font-size: 28px;
     font-weight: 700;
-    
+
 }
-.player-content p{
+
+.player-content p {
     color: #6C6C6C;
     font-size: 16px;
     font-weight: normal;
 }
+
 /* ----------------
   player-part end 
 ------------------*/
@@ -119,26 +132,29 @@ body {
 /* ----------------
   honour-part start 
 ------------------*/
-.honour-part{
+.honour-part {
     background-color: #2D25A0;
     margin-top: 165px;
-     
+
 }
-.top-honours h1{
+
+.top-honours h1 {
     text-align: center;
-     color: #FFFFFF;
-     font-size: 50px;
-     font-weight: bold;
-     font-style: normal;
-     padding-top: 50px;
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: normal;
+    padding-top: 50px;
 }
-.honour{
+
+.honour {
     padding-top: 109px;
     padding-bottom: 86px;
     display: flex;
     justify-content: space-between;
 }
-.honour img{
+
+.honour img {
     width: 230px;
     height: 230px;
 }
@@ -150,30 +166,35 @@ body {
 /* ----------------
   sponser-part start 
 ------------------*/
-.sponsers-part{
+.sponsers-part {
     margin-top: 165px;
 }
-.official h1{
+
+.official h1 {
     text-align: center;
     color: #000000;
     font-size: 50px;
     font-weight: bold;
     font-style: normal;
 }
-.sponser{
+
+.sponser {
     margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-row-gap: 30px;
 }
-.spons-image{
+
+.spons-image {
     display: flex;
     justify-content: center;
 }
-.sponser img{
+
+.sponser img {
     width: 100px;
     height: 100px;
 }
+
 /* ----------------
   sponser-part end 
 ------------------*/
@@ -181,69 +202,122 @@ body {
 /* ----------------
   footer-part start 
 ------------------*/
-footer{
+footer {
     margin-top: 161px;
 }
-.footer-part{
+
+.footer-part {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.football img{
+
+.football img {
     width: 483.87px;
     height: 110px;
 }
-.social-icon a{
+
+.social-icon a i {
     display: inline-block;
     margin-left: 14px;
     font-size: 15.49px;
     color: #969BAB;
-    padding: 7.47px;
-    background-color: #c3c8d8;;
-    border-radius: 150px;
+    padding: 10px;
+    background-color: #c3c8d8;
+    ;
+    border-radius: 50%;
 }
-.copyright{
+
+.copyright {
     margin-top: 20px;
     font-size: 18px;
     color: #000000;
     margin-bottom: 60px;
 }
+
 /* ----------------
   footer-part end 
 ------------------*/
 
 /* ------responsive using mediaquery ----------- */
 /* --------Mobile Device------------ */
-@media only screen (max-width: 688px) {
-    .container{
-        width: 100%;
-    }
+@media only screen and (max-width: 688px) {
     .header-section {
         background-color: #2D25A0;
         padding-top: 50px;
         padding-bottom: 40px;
 
     }
-    .header-content h1 {
-        color: #FFFFFF;
-        font-size: 50px;
-        font-weight:bold;
-        font-style: normal;
+
+    .container {
+        width: 100%;
+
     }
-    .header-image img {
-        width: 200px;
-        height: 200px;
-    }
+
     .header-part {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .players,
-    .honour,
-    .sponser, .footer-part{
-        display: none;
+    .header-content,
+    .header-image {
+        width: 100%;
+    }
+
+    .header-content {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .header-content h1 {
+        color: #FFFFFF;
+        font-size: 50px;
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    .header-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .watch {
+        margin-bottom: 27px;
+    }
+
+    .players {
+        display: block;
+        grid-template-columns: none;
+        grid-column-gap: 0;
+        grid-row-gap: 0;
+    }
+    .player-content {
+        margin: 0 20px;
+        margin-top: 16px;
+    }
+    .player {
+        width: 75%;
+        margin: 0 auto;
+    }
+    .honour {
+        align-items: center;
+        flex-direction: column;
+    }
+    .sponser {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer-part .football{
+        width: 82%;
+        margin: 0 auto;
+    }
+    .footer-part .football img{
+        width: 100%;
+        height: auto;
     }
 }
-
