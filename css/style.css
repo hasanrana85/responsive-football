@@ -12,10 +12,6 @@ a {
     text-decoration: none;
 }
 
-img {
-    vertical-align: middle;
-}
-
 body {
     font-family: 'Poppins',
         sans-serif;
@@ -28,6 +24,11 @@ body {
     background-color: #2D25A0;
     padding-top: 109px;
     padding-bottom: 86px;
+    
+}
+.header-section:hover .header-image img{
+    transform: rotate(30deg);
+    transition: transform 1s ease-in-out 0.3s;
 }
 
 .container {
@@ -210,4 +211,39 @@ footer{
 /* ----------------
   footer-part end 
 ------------------*/
+
+/* ------responsive using mediaquery ----------- */
+/* --------Mobile Device------------ */
+@media only screen (max-width: 688px) {
+    .container{
+        width: 100%;
+    }
+    .header-section {
+        background-color: #2D25A0;
+        padding-top: 50px;
+        padding-bottom: 40px;
+
+    }
+    .header-content h1 {
+        color: #FFFFFF;
+        font-size: 50px;
+        font-weight:bold;
+        font-style: normal;
+    }
+    .header-image img {
+        width: 200px;
+        height: 200px;
+    }
+    .header-part {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .players,
+    .honour,
+    .sponser, .footer-part{
+        display: none;
+    }
+}
 
